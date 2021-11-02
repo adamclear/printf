@@ -6,7 +6,7 @@
  * @s: input variable character to check for
  * @Return: fun[i].funct if spec is found
  */
-char * (*_get_function(char s))(void *)
+int (*_get_function(char s))(va_list *args)
 {
 	function_t fun[] = {
 						{"c", _spec_c},

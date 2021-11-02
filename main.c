@@ -9,15 +9,9 @@
  */
 int main(void)
 {
-	char one = 'a';
-	char two = 'b';
-
 	_printf("Let's try to printf a simple sentence.\n");
-	_printf("Let's try to printf another simple sentence.\n");
 	_printf("%s\n", "hello, world");
-	_printf("%s\n", "goodbye, world");
-	_printf("%c\n", one);
-	_printf("%c\n", two);
+	_printf("%c\n", 'a');
 
 	return (0);
 }

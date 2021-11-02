@@ -14,16 +14,16 @@
 typedef struct function
 {
 	char *spec;
-	char *(*funct)(void *);
+	int (*funct)(va_list *);
 } function_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-char * _spec_c(void *n);
-char * _spec_s(void *str);
+int _spec_c(va_list *args);
+int _spec_s(va_list *args);
 int _strcmp(char s1, char *s2);
 int _strlen(char *s);
-char * (*_get_function(char s))(void *);
+int (*_get_function(char s))(va_list *args);
 char * _strcpy(char *dest, char *src);
 
 #endif
