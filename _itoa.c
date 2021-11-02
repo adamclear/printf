@@ -1,36 +1,5 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@adamclear
-tsims115
-/
-printf
-Public
-1
-01
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-printf/_itoa.c
-@tsims115
-tsims115 Adding _itoa function
-Latest commit c1b4e57 8 hours ago
- History
- 2 contributors
-@tsims115@adamclear
-73 lines (68 sloc)  1.05 KB
-
-	#include "main.h"
-	#include <stdio.h>
+#include "main.h"
+#include <stdio.h>
 /**
  * reverse - reverses a string
  * @str: string to reverse
