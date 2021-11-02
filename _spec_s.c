@@ -5,7 +5,7 @@
  * @str: input string variable
  * Return: ptr_str
  */
-char * _spec_s(void *str)
+char *_spec_s(void *str)
 {
 	char *ptr_str;
 
