@@ -10,11 +10,9 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	char *(*func)(void *); /* funct ptr to find funct for spec */
+	int (*func)(va_list *); /* funct ptr to find funct for spec */
 	int x = 0;  /* input incrementer variable */
 	int tot = 0;  /* length of output string */
-	int tmp = 0;
-	char *buff = malloc(1024);
 
 	va_start(args, format);
 	while (format && format[x])
@@ -23,20 +21,17 @@ int _printf(const char *format, ...)
 		{
 			x++;
 			func = _get_function(format[x]);
-			_strcpy(buff, func(&args));
-			tot += _strlen(buff);
-			tmp = _strlen(buff);
-			write(1, buff, tmp);
+			if (func != NULL)
+			{
+				tot += func(&args);
+			}
 		}
 		else
 		{
-			write(1, buff, tot);
-			_putchar(format[x]);
-			tot++;
+			tot += _putchar(format[x]);
 		}
 		x++;
 	}
-	write(1, buff, tot);
 	va_end(args);
 	return (tot);
 }

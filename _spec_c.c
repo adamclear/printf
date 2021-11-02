@@ -5,10 +5,9 @@
  * @n: input character variable
  * Return: ptr_n
  */
-char *_spec_c(void *n)
+int _spec_c(va_list *args)
 {
-	char *ptr_n;
+	_putchar(va_arg(*args, int));
 
-	ptr_n = n;
-return (ptr_n);
+return (1);
 }
