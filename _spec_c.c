@@ -5,7 +5,7 @@
  * @n: input character variable
  * Return: ptr_n
  */
-char * _spec_c(void *n)
+char *_spec_c(void *n)
 {
 	char *ptr_n;
 
