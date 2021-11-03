@@ -23,6 +23,7 @@ int _spec_c(va_list *args);
 int _spec_s(va_list *args);
 int _spec_di(va_list *args);
 int _spec_pct(va_list *args);
+int _spec_b(va_list *args);
 int _strcmp(char s1, char *s2);
 int _strlen(char *s);
 int (*_get_function(char s))(va_list *args);

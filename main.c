@@ -15,6 +15,7 @@ int main(void)
 	_printf("test decimal: %d\n", 12);
 	_printf("test int: %i\n", 13);
 	_printf("test percent: %%\n");
+	_printf("%b\n", 50);
 
 	return (0);
 }
