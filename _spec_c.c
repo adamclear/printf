@@ -2,8 +2,8 @@
 #include <stdarg.h>
 /**
  * _spec_c - returns a string with a character in it
- * @n: input character variable
- * Return: ptr_n
+ * @args: input character variable
+ * Return: 1
  */
 int _spec_c(va_list *args)
 {
