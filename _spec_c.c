@@ -7,7 +7,11 @@
  */
 int _spec_c(va_list *args)
 {
-	_putchar(va_arg(*args, int));
+	char c = va_arg(*args, int);
+
+	if (!c)
+		return (0);
+	_putchar(c);
 
 return (1);
 }
