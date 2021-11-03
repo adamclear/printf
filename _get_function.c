@@ -4,7 +4,7 @@
  *_get_function - finds a match for the specifier and associates it with a
  *                function.
  * @s: input variable character to check for
- * @Return: fun[i].funct if spec is found
+ * Return: fun[i].funct if spec is found
  */
 int (*_get_function(char s))(va_list *args)
 {

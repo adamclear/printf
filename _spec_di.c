@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * _spec_di.c - prints integer and returns how many character printed
- * @n: number to print
- *
- *
+ * _spec_di - prints integer and returns how many character printed
+ * @args: number to print
+ * Return: number of characters printed.
  */
 int _spec_di(va_list *args)
 {
@@ -14,9 +13,9 @@ int _spec_di(va_list *args)
 
 	i = 0;
 	while (stra[i] != '\0')
-		{
-			_putchar(stra[i]);
-			i++;
-		}
+	{
+		_putchar(stra[i]);
+		i++;
+	}
 	return (i);
 }
