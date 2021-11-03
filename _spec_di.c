@@ -5,18 +5,18 @@
  *
  *
  */
-int _spec_di(int n)
+int _spec_di(va_list *args)
 {
 	int i;
 	char s[13];
-	char *str;
-	str = _itoa(n, s, 10);
+	int stri = va_arg(*args, int);
+	char *stra = _itoa(stri, s, 10);
 
 	i = 0;
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++;
-	}
+	while (stra[i] != '\0')
+		{
+			_putchar(stra[i]);
+			i++;
+		}
 	return (i);
 }

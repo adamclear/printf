@@ -5,14 +5,15 @@
  * @str: input string variable
  * Return: ptr_str
  */
-int _spec_s(char *s)
+int _spec_s(va_list *args)
 {
-	int x;
+	char *ptr_str = va_arg(*args, char *);
+	int x = 0;
 
-	for (x = 0; s[x] != '\0'; x++)
+	while (ptr_str[x] != '\0')
 	{
-		_putchar(s[x]);
+		_putchar(ptr_str[x]);
+		x++;
 	}
-
 return (x);
 }

@@ -25,7 +25,7 @@
 		}
 }
 /**
- * _itoa - converts integer to character
+ * itoa - converts integer to character
  * @str: string to save integer in
  * @n: number to convert
  * @base: base that you want the number in

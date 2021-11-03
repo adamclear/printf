@@ -5,9 +5,9 @@
  * @n: input character variable
  * Return: ptr_n
  */
-int _spec_c(int c)
+int _spec_c(va_list *args)
 {
-	_putchar(c);
+	_putchar(va_arg(*args, int));
 
-	return (1);
+return (1);
 }
