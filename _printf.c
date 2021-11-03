@@ -25,13 +25,14 @@ int _printf(const char *format, ...)
 			{
 				tot += func(&args);
 			}
+			x++;
 		}
 		else
 		{
 			tot += _putchar(format[x]);
+			x++;
 		}
-		x++;
 	}
 	va_end(args);
-	return (tot);
+return (tot);
 }

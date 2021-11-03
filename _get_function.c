@@ -11,6 +11,9 @@ int (*_get_function(char s))(va_list *args)
 	function_t fun[] = {
 						{"c", _spec_c},
 						{"s", _spec_s},
+						{"d", _spec_di},
+						{"i", _spec_di},
+						{"%", _spec_pct},
 						{NULL, NULL}
 	};
 	int i = 0;

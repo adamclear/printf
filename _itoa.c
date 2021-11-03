@@ -31,7 +31,7 @@
  * @base: base that you want the number in
  * Return: pointer to the new string
  */
-char *itoa(int n, char *str, int base)
+char *_itoa(int n, char *str, int base)
 {
 	int i;
 	int isNeg;

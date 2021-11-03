@@ -8,12 +8,12 @@
 int _spec_s(va_list *args)
 {
 	char *ptr_str = va_arg(*args, char *);
-	int x;
+	int x = 0;
 
-	for (x = 0; *ptr_str != '\0'; x++)
+	while (ptr_str[x] != '\0')
 	{
 		_putchar(ptr_str[x]);
+		x++;
 	}
-
 return (x);
 }
