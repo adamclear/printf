@@ -15,6 +15,10 @@ int _printf(const char *format, ...)
 	int tot = 0;  /* length of output string */
 
 	va_start(args, format);
+	if (!format)
+	{
+		return (-1);
+	}
 	while (format && format[x])
 	{
 		if (format[x] == '%')
