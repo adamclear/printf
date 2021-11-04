@@ -9,7 +9,11 @@ int _spec_di(va_list *args)
 	int i;
 	char s[13];
 	int stri = va_arg(*args, int);
-	char *stra = _itoa(stri, s, 10);
+	char *stra;
+
+	if (!stri)
+		exit(99);
+	stra = _itoa(stri, s, 10);
 
 	i = 0;
 	while (stra[i] != '\0')
