@@ -14,34 +14,26 @@ int _spec_R(va_list *args)
 	if (l == 0)
 	{
 		s = nope;
-		while (s[x] != '\0')
+	}
+	while (x < l)
+	{
+		if ((*s >= 'A' && *s <= 'M') || (*s >= 'a' && *s <= 'm'))
 		{
-			_putchar(nope[x]);
+			_putchar((*s + '\0') + 13);
+			s++;
 			x++;
 		}
-	}
-	else
-	{
-		while (x < l)
+		else if ((*s >= 'N' && *s <= 'Z') || (*s >= 'n' && *s >= 'z'))
 		{
-			if ((*s >= 'A' && *s <= 'M') || (*s >= 'a' && *s <= 'm'))
-			{
-				_putchar((*s + '\0') + 13);
-				s++;
-				x++;
-			}
-			else if ((*s >= 'N' && *s <= 'Z') || (*s >= 'n' && *s >= 'z'))
-			{
-				_putchar((*s + '\0') - 13);
-				s++;
-				x++;
-			}
-			else
-			{
-				_putchar(*s);
-				s++;
-				x++;
-			}
+			_putchar((*s + '\0') - 13);
+			s++;
+			x++;
+		}
+		else
+		{
+			_putchar(*s);
+			s++;
+			x++;
 		}
 	}
 return (x);
