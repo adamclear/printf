@@ -14,6 +14,8 @@ int _printf(const char *format, ...)
 	int x = 0;  /* input incrementer variable */
 	int tot = 0;  /* length of output string */
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	while (format && format[x])
 	{
