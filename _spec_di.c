@@ -2,8 +2,9 @@
 #include <limits.h>
 /**
  * print_min - prints int_min
+ * Return: i
  */
-int print_min()
+int print_min(void)
 {
 	int i;
 	char *int_min = "-2147483648";
@@ -32,8 +33,8 @@ int _spec_di(va_list *args)
 
 	if (stri == INT_MIN)
 	{
-		 i = print_min();
-		 return (i);
+		i = print_min();
+		return (i);
 	}
 	stra = _itoa(stri, s, 10);
 
