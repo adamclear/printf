@@ -11,9 +11,10 @@ int _spec_R(va_list *args)
 	int x = 0, l;
 
 	l = _strlen(s);
-	if (!s)
+	if (l == 0)
 	{
-		while (*nope != '\0')
+		s = nope;
+		while (s[x] != '\0')
 		{
 			_putchar(nope[x]);
 			x++;
