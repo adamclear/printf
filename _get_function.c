@@ -15,6 +15,7 @@ int (*_get_function(char s))(va_list * args)
 		{"i", _spec_di},
 		{"b", _spec_b},
 		{"%", _spec_pct},
+		{"r", _spec_r},
 		{NULL, NULL}
 	};
 	int i = 0;
