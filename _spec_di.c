@@ -8,11 +8,12 @@ int print_min()
 	int i;
 	char *int_min = "-2147483648";
 
+	i = 0;
 	while (*int_min != '\0')
 	{
 		_putchar(*int_min);
-		int_min++;
 		i++;
+		int_min++;
 	}
 	return (i);
 }
