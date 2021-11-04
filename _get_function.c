@@ -22,7 +22,7 @@ int (*_get_function(char s))(va_list * args)
 
 	if (!s)
 	{
-		exit (99);
+		exit(99);
 	}
 	while (fun[i].spec != NULL)
 	{
