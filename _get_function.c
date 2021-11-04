@@ -27,5 +27,5 @@ int (*_get_function(char s))(va_list * args)
 		}
 		i++;
 	}
-	exit(99);
+	return (NULL);
 }
