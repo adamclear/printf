@@ -31,6 +31,6 @@ char *_strcpy(char *dest, char *src);
 void reverse(char str[], int length);
 char *_itoa(int n, char *str, int base);
 int _spec_r(va_list *args);
-char *_rev_string(char *str);
+int _spec_R(va_list *args);
 
 #endif
