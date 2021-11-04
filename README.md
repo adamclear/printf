@@ -32,3 +32,4 @@ This project is for Holberton Shool, Lesson 0x12 printf.
 		%% - Prints a single % character - (no argument)
 		%b - Converts and unsigned int to binary - unsigned int
 		%r - Reverses the string of characters - char *
+		%R - ROT13s the string of characters - char *
