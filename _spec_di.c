@@ -1,4 +1,22 @@
 #include "main.h"
+#include <limits.h>
+/**
+ * print_min - prints int_min
+ */
+int print_min()
+{
+	int i;
+	char *int_min = "-2147483648";
+
+	while (*int_min != '\0')
+	{
+		_putchar(*int_min);
+		int_min++;
+		i++;
+	}
+	return (i);
+}
+
 /**
  * _spec_di - prints integer and returns how many character printed
  * @args: number to print
@@ -8,8 +26,15 @@ int _spec_di(va_list *args)
 {
 	int i;
 	char s[13];
+	char *stra;
 	int stri = va_arg(*args, int);
-	char *stra = _itoa(stri, s, 10);
+
+	if (stri == INT_MIN)
+	{
+		 i = print_min();
+		 return (i);
+	}
+	stra = _itoa(stri, s, 10);
 
 	i = 0;
 	while (stra[i] != '\0')
