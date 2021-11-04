@@ -20,6 +20,10 @@ int (*_get_function(char s))(va_list * args)
 	};
 	int i = 0;
 
+	if (!s)
+	{
+		exit (99);
+	}
 	while (fun[i].spec != NULL)
 	{
 		if (_strcmp(s, fun[i].spec) == 0)
@@ -28,5 +32,5 @@ int (*_get_function(char s))(va_list * args)
 		}
 		i++;
 	}
-	return (NULL);
+return (NULL);
 }
