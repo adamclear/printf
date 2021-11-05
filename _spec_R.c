@@ -23,7 +23,7 @@ int _spec_R(va_list *args)
 			s++;
 			x++;
 		}
-		else if ((*s >= 'N' && *s <= 'Z') || (*s >= 'n' && *s >= 'z'))
+		else if ((*s >= 'N' && *s <= 'Z') || (*s >= 'n' && *s <= 'z'))
 		{
 			_putchar((*s + '\0') - 13);
 			s++;
